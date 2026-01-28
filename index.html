@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Efficiemt Memory Training">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Probabilistic Token Alignment for Large Language Model Fusion</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="http://runjia.tech">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+
+      </div>
+
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">TokenSeek: Memory Efficient Fine Tuning via Instance-Aware Token
+              Ditching</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://runjia.tech">Runjia Zeng</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                Qifan Wang<sup>2</sup>,
+              </span>
+              <span class="author-block">
+                Qiang Guan<sup>3</sup>,
+              </span>
+              <span class="author-block">
+                Ruixiang Tang<sup>4</sup>,
+              </span>
+              <span class="author-block">
+                Lifu Huang<sup>5</sup>,
+              </span>
+              <span class="author-block">
+                Zhenting Wang<sup>6</sup>,
+              </span>
+              <span class="author-block">
+                Xueling Zhang<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                Cheng Han<sup>7</sup>,
+              </span>
+              <span class="author-block">
+                Dongfang Liu<sup>1†</sup>
+              </span><br><br>
+            </div>
+            <p>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Rochester Institute of Technology,</span>
+              <span class="author-block"><sup>2</sup>Meta AI,</span>
+              <span class="author-block"><sup>3</sup>Kent State University,</span>
+              <span class="author-block"><sup>4</sup>Rutgers University,</span><br>
+              <span class="author-block"><sup>5</sup>UC Davis,</span>
+              <span class="author-block"><sup>6</sup>Accenture,</span>
+              <span class="author-block"><sup>7</sup>University of Missouri-Kansas City,</span><br>
+              <span class="author-block"><sup>†</sup>Corresponding author</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2601.19739" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2601.19739" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <!-- <span class="link-block">
+                <a href="https://recorder-v3.slideslive.com/?share=96649&s=ddeb9230-5258-4ce1-bcad-092710eb580f"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/runtsang/TokenSeek"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                  <!-- <span class="link-block">
+                    <a href="./static/images/VFPT.pptx"
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fas fa-file-powerpoint"></i>
+                      </span>
+                      <span>Slides</span>
+                    </a> -->
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- <img src="./static/images/title.png"
+                   class="image is-fullwidth"
+                   alt="Interpolate start reference image."/> -->
+        <img src="./static/images/tokenseek.jpg" class="interpolation-image" alt="Interpolate start reference image." />
+        <h2 class="subtitle has-text-centered">
+          Memory Efficient Fine Tuning via Instance-Aware Token Ditching.
+        </h2>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Fine tuning has been regarded as a de facto approach for adapting large language models (LLMs) to
+              downstream tasks, but the high training memory consumption inherited from LLMs makes this process
+              inefficient. Among existing memory efficient approaches, activation-related optimization has proven
+              particularly effective, as activations consistently dominate overall memory consumption. Although prior
+              arts offer various activation optimization strategies, their data-agnostic nature ultimately results in
+              ineffective and unstable fine tuning.
+            </p>
+            <p>
+              In this paper, we propose TokenSeek, a universal plugin solution for
+              various transformer-based models through instance-aware token seeking and ditching, achieving significant
+              fine-tuning memory savings (e.g., requiring only 14.8% of the memory on Llama3.2 1B) with on-par or even
+              better performance. Furthermore, our interpretable token seeking process reveals the underlying reasons
+              for its effectiveness, offering valuable insights for future research on token efficiency.
+            </p>
+            <p>
+              P.S. The video and slides are on the way!!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <!-- Paper video. -->
+      <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://recorder-v3.slideslive.com/?share=96649&s=ddeb9230-5258-4ce1-bcad-092710eb580f"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="./static/images/teaser.jpg" class="image is-fullwidth" alt="Interpolate start reference image." />
+          <!-- <img src="./static/images/poster.jpg" class="image is-fullwidth" alt="Interpolate start reference image." /> -->
+          <!-- <img src="./static/images/2.png"
+                   class="image is-fullwidth"
+                   alt="Interpolate start reference image."/>
+        <img src="./static/images/3.png"
+                   class="image is-fullwidth"
+                   alt="Interpolate start reference image."/>      
+        <img src="./static/images/4.png"
+                   class="image is-fullwidth"
+                   alt="Interpolate start reference image."/>
+        <img src="./static/images/5.png"
+                   class="image is-fullwidth"
+                   alt="Interpolate start reference image."/>
+                    -->
+        </div>
+      </div>
+
+      <!--/ Paper video. -->
+    </div>
+  </section>
+
+
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      If you find our work useful, please consider citing our paper: <br><br>
+
+      <pre><code>@inproceedings{zeng2026tokenseek,
+  title={TokenSeek: Memory Efficient Fine Tuning via Instance-Aware Token Ditching},
+  author={Zeng, Runjia and Wang, Qifan and Guan, Qiang and Tang, Ruixiang and Huang, Lifu and Wang, Zhenting and Zhang, Xueling and Han, Cheng and Liu, Dongfang},
+  booktitle={ICLR},
+  year={2026}
+}
+</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://github.com/runtsang" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is constructed using the templet provided by <a
+                href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. Thanks for their effort.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
